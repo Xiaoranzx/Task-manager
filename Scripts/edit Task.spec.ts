@@ -23,7 +23,7 @@ test('แก้ไข Task full loop', async ({ page }) => {
 
   await test.step('กดปุ่ม Edit Task', async () => {
     const editBtn = page.getByRole('link', { name: 'Edit Task' });
-    await expect(editBtn).toBeVisible();
+    await expect(editBtn).toBeVisible({ timeout: 1000});
     await editBtn.click();
   });
 
@@ -58,7 +58,7 @@ test('แก้ไข Task full loop', async ({ page }) => {
 
   await test.step('กลับไปหน้า Tasks', async () => {
     const backLink = page.getByRole('link', { name: 'Back to Tasks' });
-    await expect(backLink).toBeVisible();
+    await expect(backLink).toBeVisible({timeout: 1000});
     await backLink.click();
 
     await expect(page).toHaveURL(/tasks/);
