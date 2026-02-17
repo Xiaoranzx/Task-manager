@@ -15,3 +15,5 @@ test case แบบละเอียดตามทุกขั้นตอน 
 npx playwright test
 report จะออกเป็น html ค่ะ
 
+ลิงค์สำหรับดู Test Scanario
+[text](https://docs.google.com/spreadsheets/d/1HdnSJpBFYW9s9m_4EjFpVk-K5xbLoDO3UIlAiITK5iI/edit?usp=sharing)
